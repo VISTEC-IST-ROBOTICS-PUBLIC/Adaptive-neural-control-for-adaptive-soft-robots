@@ -39,7 +39,7 @@ class Learning:
         Returns:
         - Re: float, the state neuron value.
         """
-        if -0.05 <= error <= 0.05:
+        if -0.05 <= error or error >= 0.05:
             return 10
         else:
             return 1
