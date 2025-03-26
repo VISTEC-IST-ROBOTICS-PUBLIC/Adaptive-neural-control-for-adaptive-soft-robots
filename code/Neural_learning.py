@@ -58,7 +58,7 @@ class Learning:
         Re = self.compute_Re(error)
 
         # Calculate the recurrent synaptic plasticity update
-        st = self.st_prev + (self.W_recall * laser * self.st_prev) + (self.W_forgot * (laser - 1) * (self.st_prev**2))
+        st = self.st_prev + (self.W_recall * laser * Rm) + (self.W_forgot * (laser - 1) * (self.st_prev**2))
 
         # Compute Rm
         Rm = st + laser
