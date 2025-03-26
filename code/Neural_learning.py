@@ -14,7 +14,7 @@ class Learning:
     - calculate: Calculates the output neuron value (Ro) and updates internal state.
     """
    
-    def __init__(self, W_R, W_recall=0.01, W_forgot=0.01):
+    def __init__(self, W_recall=0.01, W_forgot=0.01):
         """
         Initialize the Learning module.
 
@@ -24,7 +24,6 @@ class Learning:
         - W_forgot: float, forgetting weight factor (default is 0.01).
         """
         self.st_prev = 0.0
-        self.W_R = W_R
         self.W_recall = W_recall
         self.W_forgot = W_forgot
 
