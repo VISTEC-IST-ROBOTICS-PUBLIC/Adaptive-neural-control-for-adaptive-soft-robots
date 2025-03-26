@@ -5,7 +5,6 @@ class Learning:
 
     Attributes:
     - st_prev: float, previous synaptic state (default is 0.0).
-    - W_R: float, the current weight value to be updated.
     - W_recall: float, recall weight factor (default is 0.01).
     - W_forgot: float, forgetting weight factor (default is 0.01).
 
