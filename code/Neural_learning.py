@@ -4,7 +4,7 @@ class Learning:
     Neural learning module based on recurrent synaptic plasticity.
 
     Attributes:
-    - st_prev: float, previous synaptic state (default is 0.0).
+    - st_prev: float, previous synaptic state (default is 0.01).
     - W_recall: float, recall weight factor (default is 0.01).
     - W_forgot: float, forgetting weight factor (default is 0.01).
 
@@ -18,11 +18,10 @@ class Learning:
         Initialize the Learning module.
 
         Parameters:
-        - W_R: float, the current weight value to be updated.
         - W_recall: float, recall weight factor (default is 0.01).
         - W_forgot: float, forgetting weight factor (default is 0.01).
         """
-        self.st_prev = 0.0
+        self.st_prev = 0.01
         self.W_recall = W_recall
         self.W_forgot = W_forgot
 
